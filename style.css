@@ -46,6 +46,7 @@ main {
     border: none;
     border-radius: 20px;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+    color: hsl(257, 40%, 49%);
 }
 
 footer {
@@ -59,7 +60,60 @@ footer img {
     border-radius: 50%;
 }
 
-footer img:nth-child(2) {
+footer a:nth-child(2) {
     margin-right: 3%;
     margin-left: 3%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background: url(images/bg-desktop.svg) no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        margin: 4% 5% 2% 5%;
+    }
+
+    header img {
+        width: 17%;
+    }
+
+    main {
+        display: flex;
+        margin-top: 7%;
+    }
+
+    .illustration-mockup img {
+        width: auto;
+    }
+
+    .text {
+        margin-top: 1%;
+        text-align: initial;
+        width: 40%;
+        margin-left: 4%;
+    }
+
+    .text-headings {
+        font-size: 38px;
+    }
+
+    .text-body {
+        margin-bottom: 5%;
+    }
+
+    .text button {
+        padding: 15px 60px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    footer {
+        text-align: end;
+        margin-top: 3%;
+    }
+
+    footer a:nth-child(2) {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
 }
